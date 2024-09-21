@@ -1,6 +1,7 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import Form from "./Form";
 
 const Contact = () => {
   return (
@@ -13,6 +14,17 @@ const Contact = () => {
       >
         Contact Us
       </motion.h1>
+      <div>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          href="#"
+          className="mb-2"
+        >
+          <Form />
+        </motion.div>
+      </div>
       <div className="text-center tracking-tighter">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}

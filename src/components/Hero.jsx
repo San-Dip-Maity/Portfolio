@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import about from "../assets/about1.jpg";
+import about from "../assets/Dp.png";
 import { motion } from "framer-motion";
 
 const Container = (delay) => ({
@@ -23,7 +23,7 @@ const Hero = () => {
               variants={Container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-10 lg:text-7xl"
             >
               Sandip Maity
             </motion.h1>
