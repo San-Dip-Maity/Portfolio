@@ -12,9 +12,9 @@ const Navbar = () => {
       <div
         className="m-4 flex items-center justify-center gap-4 text-2xl"
       >
-        <FaInstagram  />
-        <FaLinkedin />
-        <FaGithub />
+        <a href="https://www.instagram.com/s_a_n_d_i_p_18/" target="_blank" rel="Linkedin"><FaInstagram className="hover:text-blue-500 hover:scale-110 transition-all ease-in-out cursor-pointer"  /></a>
+        <a href="https://www.linkedin.com/in/sandipmaity21/" target="_blank" rel="Linkedin"><FaLinkedin className="hover:text-blue-500 hover:scale-110 transition-all ease-in-out cursor-pointer"/></a>
+        <a href="https://github.com/San-Dip-Maity" target="_blank" rel="Github"><FaGithub className="hover:text-blue-500 hover:scale-110 transition-all ease-in-out cursor-pointer"/></a>
       </div>
     </nav>
   );
