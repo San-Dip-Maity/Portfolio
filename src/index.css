@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  font-family : "Inter",sans-serif
+
+:root {
+  font-family: "Titillium Web", "Inter", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 18px;
 }

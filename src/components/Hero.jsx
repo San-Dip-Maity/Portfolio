@@ -2,6 +2,7 @@ import React from "react";
 import { HERO_CONTENT } from "../constants";
 import about from "../assets/Dp.png";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const Container = (delay) => ({
   hidden: { x: -400, opacity: 0 },
@@ -33,13 +34,25 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Full Stack Web Developer
+              <TypeAnimation
+                sequence={[
+                  "Full Stack Web Developer",
+                  1000,
+                  "Frontend Developer",
+                  1000,
+                  "Backend Developer",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
             </motion.span>
             <motion.p
               variants={Container(1.2)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tight"
+              className="my-2 max-w-xl py-6 font-light"
             >
               {HERO_CONTENT}
             </motion.p>

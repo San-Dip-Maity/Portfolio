@@ -1,5 +1,5 @@
 import React from "react";
-import { RiReactjsFill } from "react-icons/ri";
+import { RiCss3Fill, RiDatabase2Fill, RiGithubFill, RiHtml5Fill, RiJavaFill, RiReactjsFill } from "react-icons/ri";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
@@ -31,6 +31,22 @@ const Tech = () => {
         Technologies
       </motion.h1>
       <div className="flex flex-wrap items-center justify-center gap-4">
+      <motion.div
+          variants={IconVariant(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiHtml5Fill className="text-7xl text-red-500" />
+        </motion.div>
+        <motion.div
+          variants={IconVariant(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiCss3Fill className="text-7xl text-blue-400" />
+        </motion.div>
         <motion.div
           variants={IconVariant(2)}
           initial="initial"
@@ -70,6 +86,30 @@ const Tech = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <RiReactjsFill className="text-7xl text-blue-400" />
+        </motion.div>
+        <motion.div
+          variants={IconVariant(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiDatabase2Fill className="text-7xl text-green-400" />
+        </motion.div>
+        <motion.div
+          variants={IconVariant(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiGithubFill className="text-7xl text-red-600" />
+        </motion.div>
+        <motion.div
+          variants={IconVariant(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiJavaFill className="text-7xl text-blue-600" />
         </motion.div>
       </div>
     </div>
